@@ -193,7 +193,6 @@ function World._applyTraits(
 )
 
     local relevant = GetRelevantTraitsFromArchetype(self, modified)
-    if #relevant == 0 then return end
 
     for _, row in pairs(self._traitMap) do
         AttachTraitRow(self, entity, row, relevant)

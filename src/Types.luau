@@ -17,7 +17,7 @@ export type UpdateState = {
     _update: (self: UpdateState) -> boolean
 }
 
-export type Scoped<D = unknown> = { unknown } & D
+export type Scoped<D = any> = { unknown } & D
 
 export type Value<value> = State<value> & {
     Set: (self: Value<value>, value: any, force: boolean?) -> value?,
